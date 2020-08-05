@@ -1,5 +1,9 @@
 steps:
-    - id: 'init'
-      name: 'ubuntu'
-      args: ['echo', 'hello']
-      waitFor: ['-']
+  - name: docker.io/library/python:3.7
+    id: Check code style
+    entrypoint: /bin/sh
+    args:
+      - -c
+      - >-
+        pip install black==19.10b0 &&
+        black --check app.py
