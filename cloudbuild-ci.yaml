@@ -1,4 +1,5 @@
 steps:
-- name: 'check black'
-  args: ['black', '--check', '.']
-  id: 'check-black'
+    - id: 'init'
+      name: 'ubuntu'
+      args: ['echo', 'hello']
+      waitFor: ['-']
