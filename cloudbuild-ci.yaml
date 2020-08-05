@@ -1,5 +1,4 @@
 steps:
-
-# Check black
 - name: 'check black'
   args: ['black', '--check', '.']
+  id: 'check-black'
