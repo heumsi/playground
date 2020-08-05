@@ -1,5 +1,3 @@
 steps:
-
-# Check black
 - name: 'check black'
   args: ['black', '--check', '.']
