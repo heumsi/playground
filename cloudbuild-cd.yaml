@@ -7,7 +7,7 @@ steps:
     args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA"]
 
   # Deploy container image to Cloud Run
-  - name: "gcr.io/google/com/cloudsdktool/cloud-sdk"
+  - name: "gcr.io/cloud-builders/gcloud"
     entrypoint: gcloud
     args:
       [
