@@ -21,3 +21,5 @@ steps:
         "--platform",
         "managed",
       ]
+images:
+  - "gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA"
