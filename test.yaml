@@ -1,5 +1,5 @@
 app:
-  image: newImageName
+  image: newImageName2
   connections:
   - a
   - b
