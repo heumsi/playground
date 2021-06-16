@@ -1,0 +1,6 @@
+app:
+  image: imageName
+  connections:
+  - a
+  - b
+  - c
